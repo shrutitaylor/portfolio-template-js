@@ -1,0 +1,24 @@
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'pressStart';
+  src: url('./assets/fonts/PressStart2P-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aoMono';
+  src: url('./assets/fonts/AOMono-Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.outline-text {
+  color: rgb(28, 28, 28);
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
