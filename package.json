@@ -2,14 +2,15 @@
   "name": "portfolio-template-js",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://shrutitaylor.github.io/portfolio-template-js/",
   "type": "module",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
     
   },
   "dependencies": {
