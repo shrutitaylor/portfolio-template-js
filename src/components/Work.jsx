@@ -60,6 +60,7 @@ export default function Work() {
            { projects.map((project, index) => (
             <AnimatePresence>
             <motion.div 
+            
              initial={{ opacity: 0, scale: 0 }}
              whileInView={{ opacity: 1, scale: 1 }}
              transition={{

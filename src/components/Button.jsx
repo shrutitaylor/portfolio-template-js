@@ -48,8 +48,9 @@ const Button = () => {
           after:border-white
           font-aoMono uppercase
         "
+       
       >
-        CONTACT
+        <a  href="mailto:shruti128770@gmail.com?subject=Hello Shruti!&body=Hi Shruti," >CONTACT</a>
       </button>
     </div>
   );
