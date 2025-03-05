@@ -1,10 +1,10 @@
 
 import React, { useRef } from "react";
 import TiltedCard from "./TitledCard";
-import moodify from "/portfolio-template-js/img1_.png";
-import soil from "/portfolio-template-js/img2_.png";
-import artportfolio from "/portfolio-template-js/img3_.png";
-import headphones from "/portfolio-template-js/img5_.png";
+import moodify from "/img1_.png";
+import soil from "/img2_.png";
+import artportfolio from "/img3_.png";
+import headphones from "/img5_.png";
 
 import {
     AnimatePresence,
