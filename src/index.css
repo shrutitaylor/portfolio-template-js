@@ -22,3 +22,19 @@
   color: rgb(28, 28, 28);
   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
+
+/* Add this to your CSS file or a <style> tag */
+.work-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* Space between cards */
+  padding: 20px;
+}
+
+.tilted-card-demo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}

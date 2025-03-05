@@ -3,14 +3,11 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import StarWarDesign from "../model/starWar";
-import * as THREE from 'three';
-import { Image, Environment, ScrollControls, useScroll, useTexture, Scroll } from '@react-three/drei';
-import { easing } from 'maath';
 import './util';
-import { Carousel } from "./Carousel";
-import { Work } from "./Work";
-import { Items } from "./Scroll";
-
+import Work from "./Work";
+import ScrollFloat from "../blocks/TextAnimations/ScrollFloat/ScrollFloat";
+import ScrollVelocity from "./scrollVelocity";
+import Button from "./Button";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -40,15 +37,16 @@ export default function Home() {
 
     return (
         <>
-            <div className="min-h-screen w-full">
-                <nav>dfvgdfb</nav>
+            <div className="min-h-screen w-full mt-14 overflow-hidden">
+            
                 <main ref={mainRef} className="overflow-hidden text-black">
                     {/* Section 1 */}
                     <section className="relative flex flex-col grid h-[100vh]">
                         <div className="absolute top-10 w-[100vw]">
                             <div className="grid grid-cols-1 md:grid-cols-2">
-                                <div className="w-full font-aoMono p-10 h-[450px] bg-grey rounded-lg">
-                                    WELCOME TO MY PORTFOLIO
+                                <div className="w-full font-aoMono justify-between flex-col p-10 h-[400px] mb-5 bg-grey rounded-lg">
+                                    <p>WELCOME TO MY PORTFOLIO</p>
+                                    <p className="mt-[250px] text-5xl p-4 bg-white  w-44">うちは</p>
                                 </div>
                                 <div className="text-right text-grey font-aoMono p-10">
                                     JANE DOE <br /> based in melbourne
@@ -71,10 +69,11 @@ export default function Home() {
                     </section>
 
                     {/* Section 2 */}
-                    <section className="relative text-right flex items-center w-screen justify-start h-[100vh]">
+                    <section id="about" className="relative text-right flex items-center w-screen justify-start h-[100vh]">
                         {/* Developer Text (behind the canvas) */}
                         <div className="grid grid-cols-1 md:grid-cols-2 w-screen">
                         <div className="hidden md:block text-center border-0 outline-text font-pressStart text-5xl z-10">
+                        
                            <p>developer</p> developer<br />
                             developer<br />
                             developer<br />
@@ -83,6 +82,7 @@ export default function Home() {
                             developer<br />
                             developer<br />
                             developer<br />
+                            
                         </div>
 
                         
@@ -99,9 +99,11 @@ export default function Home() {
                 </main>
 
                 {/* Carousel Section */}
-                <div className="relative h-screen w-screen bg-[#D9D9D9]">
-                    <Carousel />
-                    
+                <div id="work" className="flex p-10 flex-col justify-center items-center w-screen">
+                <ScrollVelocity texts={[ 'Projects']}  className="custom-scroll-text font-pressStart text-grey mb-44" />
+                    <Work />
+                    {/* <Carousel />
+                     */}
                       {/* <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
                             <color attach="background" args={['#f0f0f0']} />
                             <ScrollControls damping={6} pages={5}>
@@ -119,12 +121,15 @@ export default function Home() {
                             </Scroll>
                             </ScrollControls>
                         </Canvas> */}
+                        
                 </div>
 
                 {/* Carousel Section */}
-                <div className="relative min-h-screen flex justify-center p-10 w-screen">
+                {/* <div className="relative min-h-screen flex justify-center p-10 w-screen">
                     <Work />
-                </div>
+                </div> */}
+                <ScrollVelocity texts={[ 'Lets Connect']}  className="custom-scroll-text font-pressStart text-grey " />
+                <div id="contact"  className="flex justify-center mt-5"><Button/></div>
             </div>
         </>
     );

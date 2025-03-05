@@ -134,7 +134,7 @@ export default function TiltedCard({
            
           </motion.div>
           <motion.div
-            className="absolute flex text bg-yellow max-h-48 w-64 font-aoMono text-sm uppercase flex p-5 justify-center  bottom-[-70px] right-[-80px] z-[2] will-change-transform [transform:translateZ(30px)]"
+            className="shadow-lg absolute flex text bg-yellow max-h-48 w-64 font-aoMono text-sm uppercase flex p-5 justify-center  bottom-[-70px] right-[-80px] z-[2] will-change-transform [transform:translateZ(30px)]"
           >
             {altText} <br></br><br></br>
             {desc}

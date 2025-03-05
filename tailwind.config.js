@@ -13,6 +13,10 @@ export default {
         'pressStart': ['pressStart', 'serif'],
         'aoMono': ['aoMono', 'monospace'],
       },
+      boxShadow: {
+        'dark-sm': '0 1px 4px 0 rgba(255, 255, 255, 0.84)', //White shadow
+       
+      },
     },
   },
   plugins: [],
