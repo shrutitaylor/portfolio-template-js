@@ -3,7 +3,7 @@ import { useGLTF } from '@react-three/drei'
 import gsap from 'gsap';
 
 export function StarWarModel(props) {
-  const { nodes, materials } = useGLTF('/lego_star_wars_iii_clone_trooper.glb');
+  const { nodes, materials } = useGLTF('/portfolio-template-js/lego_star_wars_iii_clone_trooper.glb');
   const groupRef = useRef()
 
   useEffect(() => {
@@ -121,4 +121,4 @@ export function StarWarModel(props) {
   )
 }
 
-useGLTF.preload('/lego_star_wars_iii_clone_trooper.glb');
+useGLTF.preload('/portfolio-template-js/lego_star_wars_iii_clone_trooper.glb');

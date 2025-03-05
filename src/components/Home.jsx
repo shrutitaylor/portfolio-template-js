@@ -89,9 +89,11 @@ export default function Home() {
 
                         {/* Other Content */}
                         <div className="text-right text-grey font-aoMono p-10">
-                                   <h1 className="font-pressStart text-5xl">ABOUT ME</h1>
+                                   <h1 className="font-pressStart text-7xl">ABOUT ME</h1>
                                    <p className="font-aoMono text-xl">
-                                   Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that does not yet have content.Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing
+                                   I blend art and code to create meaningful digital experiences. Whether it’s designing user-friendly interfaces, building seamless web applications or adding a dash of creativity to every project, I believe in making ideas come alive.  </p>
+                                   <p className="font-aoMono text-xl mt-5">
+                                   So whether you need someone to code a digital masterpiece or paint a literal one, I’m your person! Let’s create something amazing together.
                                    </p>
                         </div>
                         </div>
